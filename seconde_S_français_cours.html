@@ -2,14 +2,218 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seconde S - Français - Cours</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Cours de Français - Seconde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #34495e;
+      padding: 0.5rem;
+    }
+    nav button {
+      background: #ecf0f1;
+      border: none;
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    nav button.active {
+      background: #3498db;
+      color: white;
+    }
+    .search-container {
+      text-align: center;
+      margin: 1rem;
+    }
+    .search-container input {
+      width: 60%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .content {
+      display: none; /* masqué par défaut */
+      padding: 1rem 2rem;
+    }
+    .content.active {
+      display: block; /* affiché si actif */
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    .course {
+      background: white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    details {
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Seconde S - Français - Cours</h1>
-    <p>Aucun contenu pour le moment.</p>
-  </div>
+
+<header>
+  <h1>Cours de Français - Seconde </h1>
+</header>
+
+<nav>
+  <button class="tab active" data-target="grammaire">Grammaire</button>
+  <button class="tab" data-target="conjugaison">Conjugaison</button>
+  <button class="tab" data-target="lexique">Lexique</button>
+  <button class="tab" data-target="lecture">Lecture</button>
+  <button class="tab" data-target="expression">Expression écrite</button>
+  <button class="tab" data-target="oral">Expression orale</button>
+  <button class="tab" data-target="culture">Culture littéraire</button>
+  <button class="tab" data-target="versification">Versification</button>
+</nav>
+
+<div class="search-container">
+  <input type="text" id="search" placeholder="Rechercher un cours...">
+</div>
+
+<main>
+  <!-- Grammaire -->
+  <section id="grammaire" class="content active">
+    <h2>Grammaire</h2>
+    <div class="course"><a href="#">📌 Classes grammaticales : nom, verbe, adjectif, pronom, adverbe, préposition, conjonction.</a></div>
+    <div class="course"><a href="#">📌 Fonctions : sujet, COD, COI, attribut du sujet, complément circonstanciel.</a></div>
+    <div class="course"><a href="#">📌 Accords : sujet/verbe, nom/adjectif, participes passés.</a></div>
+    <div class="course"><a href="#">📌 Concordance des temps (discours direct/indirect).</a></div>
+  </section>
+
+  <!-- Conjugaison -->
+  <section id="conjugaison" class="content">
+    <h2>Conjugaison</h2>
+    <div class="course"><a href="#">📌 Temps du récit : imparfait, passé simple, plus-que-parfait.</a></div>
+    <div class="course"><a href="#">📌 Temps du discours : présent, futur simple, futur antérieur.</a></div>
+    <div class="course"><a href="#">📌 Modes : indicatif, subjonctif, conditionnel, impératif.</a></div>
+    <div class="course"><a href="#">📌 Valeurs des temps dans un texte narratif.</a></div>
+  </section>
+
+  <!-- Lexique -->
+  <section id="lexique" class="content">
+    <h2>Lexique</h2>
+    <div class="course"><a href="#">📌 Synonymes, antonymes, homonymes.</a></div>
+    <div class="course"><a href="#">📌 Familles de mots, préfixes et suffixes.</a></div>
+    <div class="course"><a href="#">📌 Champ lexical et champ sémantique.</a></div>
+    <div class="course"><a href="#">📌 Figures de style de base (métaphore, comparaison, personnification).</a></div>
+  </section>
+
+  <!-- Lecture -->
+  <section id="lecture" class="content">
+    <h2>Lecture</h2>
+    <div class="course"><a href="#">📌 Analyse de textes narratifs (schéma narratif, personnages, narrateur).</a></div>
+    <div class="course"><a href="#">📌 le soleil des independances de Ahmadou Kourouma.</a></div>
+    <div class="course">
+      <h3>Exercice interactif</h3>
+      <details>
+        <summary>QCM : Identifier le registre littéraire</summary>
+        <p>« Ô rage ! ô désespoir ! ô vieillesse ennemie ! » → registre ?</p>
+        <details><summary>Afficher la réponse</summary><p>Réponse : Tragique.</p></details>
+      </details>
+    </div>
+  </section>
+
+  <!-- Expression écrite -->
+  <section id="expression" class="content">
+    <h2>Expression écrite</h2>
+    <div class="course"><a href="#">📌 Rédaction d’un récit narratif (introduction, développement, conclusion).</a></div>
+    <div class="course"><a href="#">📌 Argumentation : thèse, arguments, exemples, connecteurs logiques.</a></div>
+    <div class="course"><a href="#">📌 Techniques du résumé et de la synthèse.</a></div>
+    <div class="course"><a href="#">📌 Méthode du commentaire composé.</a></div>
+    <div class="course"><a href="#">📌 Méthode de la dissertation.</a></div>
+    <div class="course"><a href="#">📌 Méthode de la contraction de texte.</a></div>
+  </section>
+
+  <!-- Expression orale -->
+  <section id="oral" class="content">
+    <h2>Expression orale</h2>
+    <div class="course"><a href="#">📌 Prendre la parole en public.</a></div>
+    <div class="course"><a href="#">📌 L’art de l’argumentation orale.</a></div>
+    <div class="course"><a href="#">📌 Lecture expressive et diction.</a></div>
+  </section>
+
+  <!-- Culture littéraire -->
+  <section id="culture" class="content">
+    <h2>Culture littéraire</h2>
+    <div class="course"><a href="#">📌 Présentation des grands courants littéraires (classicisme, romantisme, réalisme, surréalisme).</a></div>
+    <div class="course"><a href="#">📌 Étude d’œuvres intégrales (roman, théâtre, poésie).</a></div>
+    <div class="course"><a href="#">📌 Analyse des figures de style (anaphore, allégorie, hyperbole...).</a></div>
+  </section>
+
+  <!-- Versification -->
+  <section id="versification" class="content">
+    <h2>Versification</h2>
+    <div class="course">
+      <h3>Notions de base</h3>
+      <ul>
+        <li>Mètre : alexandrin (12), décasyllabe (10), octosyllabe (8).</li>
+        <li>Rimes : plates (AA), croisées (ABAB), embrassées (ABBA).</li>
+        <li>Richesse : pauvre (1 son), suffisante (2 sons), riche (3+ sons).</li>
+        <li>Strophes : distique, tercet, quatrain...</li>
+        <li>Procédés : diérèse, synérèse, enjambement, rejet, contre-rejet.</li>
+      </ul>
+    </div>
+    <div class="course">
+      <h3>Exemple poétique</h3>
+      <p><i>« Ô lac ! l'année à peine a fini sa carrière,<br>
+      Et près des flots chéris qu'elle devait revoir,<br>
+      Regarde ! je viens seul m'asseoir sur cette pierre<br>
+      Où tu la vis s'asseoir ! »</i> (Lamartine)</p>
+    </div>
+    <div class="course">
+      <h3>Exercice interactif</h3>
+      <details>
+        <summary>QCM : Identifier le type de rime</summary>
+        <p><i>Ô douleur ! ô douleur ! Le Temps mange la vie,<br>
+        Et l’obscur Ennemi qui nous ronge le cœur.</i></p>
+        <details><summary>Afficher la réponse</summary><p>Réponse : rimes plates (AA).</p></details>
+      </details>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Onglets
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".content");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      contents.forEach(c => c.classList.remove("active"));
+      document.getElementById(tab.dataset.target).classList.add("active");
+    });
+  });
+
+  // Recherche
+  document.getElementById("search").addEventListener("input", function() {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll(".content.active .course").forEach(course => {
+      course.style.display = course.textContent.toLowerCase().includes(query) ? "block" : "none";
+    });
+  });
+</script>
+
 </body>
 </html>
