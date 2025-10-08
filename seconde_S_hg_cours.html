@@ -2,14 +2,160 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seconde S - HG - Cours</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Cours d'HISTO-GÉO </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #34495e;
+      padding: 0.5rem;
+    }
+    nav button {
+      background: #ecf0f1;
+      border: none;
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    nav button.active {
+      background: #3498db;
+      color: white;
+    }
+    .search-container {
+      text-align: center;
+      margin: 1rem;
+    }
+    .search-container input {
+      width: 60%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .content {
+      display: none; /* masqué par défaut */
+      padding: 1rem 2rem;
+    }
+    .content.active {
+      display: block; /* affiché si actif */
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    .course {
+      background: white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    details {
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Seconde S - HG - Cours</h1>
-    <p>Aucun contenu pour le moment.</p>
-  </div>
+
+<header>
+  <h1>Cours d'Histoire-Géographie - Seconde</h1>
+</header>
+<nav>
+  <button class="tab active" data-target="histoire">histoire</button>
+  <button class="tab" data-target="geographie">Geographie</button>
+</nav>
+<div class="search-container">
+  <input type="text" id="search" placeholder="Rechercher un cours...">
+</div>
+<main>
+  <!-- HISTOIRE -->
+  <section id="histoire" class="content active">
+    <h2>histoire</h2>
+    <div class="course"><a href="#">📌histoire: definition,objet et importance .</a></div>
+    <div class="course"><a href="#">📌problématique de l'histoire africaine:sources et procédés d'investigations(tradition orale,archeologie et linguistique).</a></div>
+    <div class="course"><a href="#">📌l'Afrique berceau de l'humanité.</a></div>
+    <div class="course"><a href="#">📌les civilisations paléolithiques.</a></div>
+     <div class="course"><a href="#">📌la revolution neolithique et ses conséquences.</a></div>
+    <div class="course"><a href="#">📌la préhistoire et protohistoire du senegal.</a></div>
+    <div class="course"><a href="#">📌exercices à la technique de dissertation.</a></div>
+    <div class="course"><a href="#">📌les civilisations de l'Egypte pharaonique.</a></div>
+    <div class="course"><a href="#">📌axoum .</a></div>
+    <div class="course"><a href="#">📌 la méditerranée et le monde noir:contacts,echanges,migrations et influence culturelle.</a></div>
+    <div class="course"><a href="#">📌 etude de parentés entre la civilisation egiptienne et le reste de l'afrique:exemple du senegal(sous forme d'exposé).</a></div>
+    <div class="course"><a href="#">📌les civilisations du soudan médiéval(ghana,mali,songhai):organisation sociale et politique,vie economique culturelle et religieuse.</a></div>
+    <div class="course"><a href="#">📌le processus d'islamisation en afrique occidentale(introduction,extension et impact).</a></div>
+    <div class="course"><a href="#">📌l'empire du jolof</a></div>
+    <div class="course"><a href="#">📌l'empire du gabuu.</a></div>
+    <div class="course"><a href="#">📌exercices à la technique du commentaire historique.</a></div>
+    <div class="course"><a href="#">📌la traite arabe(origines,extendsions,consequences en afrique et en asie).</a></div>
+    <div class="course"><a href="#">📌la traite atlantique(origines,extendsions,consequences en afrique,aux amerique et en europe).</a></div>
+    <div class="course"><a href="#">📌la traite et au senegal(sous forme d'exposée).</a></div>
+    <div class="course"><a href="#">📌la revolution torodo.</a></div>
+    <div class="course"><a href="#">📌l'empire d'Elhadji Omar Tall.</a></div>
+    <div class="course"><a href="#">📌l'empire zoulou de tchacka.</a></div>
+    <div class="course"><a href="#">📌la revolution américaine.</a></div>
+    <div class="course"><a href="#">📌la revolution française de 1789.</a></div>
+    <div class="course"><a href="#">📌l'independance d'haiti.</a></div>
+
+  </section>
+  <!-- Geographie -->
+  <section id="geographie" class="content">
+    <h2>geographie</h2>
+    <div class="course"><a href="#">📌les moyens de connaissances de l'univers.</a></div>
+    <div class="course"><a href="#">📌les mouvements de la terre.</a></div>
+    <div class="course"><a href="#">📌les planetes du systeme solaire et les formes de représentation de la terre.</a></div>
+    <div class="course"><a href="#">📌la repatition des continents et des océans.</a></div>
+    <div class="course"><a href="#">📌les eaux marines.</a></div>
+    <div class="course"><a href="#">📌l'athmosphere:structure et composition.</a></div>
+    <div class="course"><a href="#">📌les facteurs du climat.</a></div>
+    <div class="course"><a href="#">📌les elements du climat.</a></div>
+    <div class="course"><a href="#">📌carte de repartition des climats de la terre et construction de diagramme.</a></div>
+    <div class="course"><a href="#">📌la tectonique des plaques et l'isostasie.</a></div>
+    <div class="course"><a href="#">📌les grandes types de structures et leurs repartitions.</a></div>
+    <div class="course"><a href="#">📌l'erosion.</a></div>
+    <div class="course"><a href="#">📌les reliefs de la terre et leurs repartitions.</a></div>
+    <div class="course"><a href="#">📌les regions intertropicales.</a></div>
+    <div class="course"><a href="#">📌les regions tempérées.</a></div>
+    <div class="course"><a href="#">📌les regions polaire.</a></div>
+    <div class="course"><a href="#">📌l'originalité des montagnes et des littoraux.</a></div>
+
+  </section>
+</main>
+  <script>
+  // Onglets
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".content");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      contents.forEach(c => c.classList.remove("active"));
+      document.getElementById(tab.dataset.target).classList.add("active");
+    });
+  });
+
+  // Recherche
+  document.getElementById("search").addEventListener("input", function() {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll(".content.active .course").forEach(course => {
+      course.style.display = course.textContent.toLowerCase().includes(query) ? "block" : "none";
+    });
+  });
+</script>
 </body>
 </html>
